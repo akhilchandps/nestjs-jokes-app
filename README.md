@@ -261,26 +261,6 @@ Once the app is running, open your browser and go to:
 http://localhost:3000/api#/
 ```
 
-You can test all 5 endpoints directly from the browser — no Postman needed.
-
-![Swagger UI](https://img.shields.io/badge/Swagger-UI-green?style=for-the-badge&logo=swagger)
-
-> All endpoints are documented with request bodies, query params, and response examples.
-
----
-
-## 📖 Swagger UI
-
-Once the app is running, open your browser and go to:
-
-```
-http://localhost:3000/api#/
-```
-
-You can test all 5 endpoints directly from the browser — no Postman needed.
-
-> All endpoints are fully documented with request bodies, query params, and live response examples.
-
 ---
 
 ## 🗂 Project Structure
