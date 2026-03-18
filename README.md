@@ -236,14 +236,6 @@ All inputs are validated using `class-validator`. Required fields and email form
   ],
   "error": "Bad Request"
 }
-```
-
-| Field | Rule |
-|---|---|
-| `title` | Required, max 255 characters |
-| `content` | Required, min 5 characters |
-| `email` | Required, valid email format |
-| `category` | Optional, max 100 characters |
 
 ---
 
