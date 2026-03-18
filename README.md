@@ -3,9 +3,8 @@
 A REST API for submitting, retrieving, updating, and deleting jokes — built with **NestJS**, **TypeORM**, and **PostgreSQL**.
 
 ---
-
 ## ✨ Features
-
+ 
 - Submit a new joke
 - Retrieve jokes by email
 - Retrieve a random joke
@@ -14,14 +13,14 @@ A REST API for submitting, retrieving, updating, and deleting jokes — built wi
 - Input validation (using `class-validator`)
 - Proper error handling (`NotFoundException` for missing jokes)
 
----
+  ---
 
 ## 📦 Tech Stack
 
 - **Framework:** NestJS
 - **Database:** PostgreSQL + TypeORM
 - **Validation:** class-validator
-- **Docs:** Swagger UI → `http://localhost:3000/api#/`
+- **Docs:** Swagger UI → `http://localhost:3000/api`
 
 ---
 
@@ -64,15 +63,10 @@ NODE_ENV=development
 CREATE DATABASE jokes_db;
 ```
 
-### 5. Run the app
+### 5. Start the app
 
 ```bash
-# Development mode (hot reload)
 npm run start:dev
-
-# OR production mode
-npm run build
-npm run start:prod
 ```
 
 Swagger docs available at: **http://localhost:3000/api#/**
@@ -243,7 +237,6 @@ All inputs are validated using `class-validator`. Required fields and email form
   "error": "Bad Request"
 }
 ```
-
 
 ---
 
