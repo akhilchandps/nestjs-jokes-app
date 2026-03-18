@@ -3,8 +3,9 @@
 A REST API for submitting, retrieving, updating, and deleting jokes — built with **NestJS**, **TypeORM**, and **PostgreSQL**.
 
 ---
+
 ## ✨ Features
- 
+
 - Submit a new joke
 - Retrieve jokes by email
 - Retrieve a random joke
@@ -13,14 +14,14 @@ A REST API for submitting, retrieving, updating, and deleting jokes — built wi
 - Input validation (using `class-validator`)
 - Proper error handling (`NotFoundException` for missing jokes)
 
-  ---
+---
 
 ## 📦 Tech Stack
 
 - **Framework:** NestJS
 - **Database:** PostgreSQL + TypeORM
 - **Validation:** class-validator
-- **Docs:** Swagger UI → `http://localhost:3000/api`
+- **Docs:** Swagger UI → `http://localhost:3000/api#/`
 
 ---
 
@@ -63,10 +64,15 @@ NODE_ENV=development
 CREATE DATABASE jokes_db;
 ```
 
-### 5. Start the app
+### 5. Run the app
 
 ```bash
+# Development mode (hot reload)
 npm run start:dev
+
+# OR production mode
+npm run build
+npm run start:prod
 ```
 
 Swagger docs available at: **http://localhost:3000/api#/**
@@ -236,17 +242,46 @@ All inputs are validated using `class-validator`. Required fields and email form
   ],
   "error": "Bad Request"
 }
+```
+
+| Field | Rule |
+|---|---|
+| `title` | Required, max 255 characters |
+| `content` | Required, min 5 characters |
+| `email` | Required, valid email format |
+| `category` | Optional, max 100 characters |
 
 ---
 
-
 ## 📖 Swagger UI
- 
+
 Once the app is running, open your browser and go to:
- 
+
 ```
 http://localhost:3000/api#/
 ```
+
+You can test all 5 endpoints directly from the browser — no Postman needed.
+
+![Swagger UI](https://img.shields.io/badge/Swagger-UI-green?style=for-the-badge&logo=swagger)
+
+> All endpoints are documented with request bodies, query params, and response examples.
+
+---
+
+## 📖 Swagger UI
+
+Once the app is running, open your browser and go to:
+
+```
+http://localhost:3000/api#/
+```
+
+You can test all 5 endpoints directly from the browser — no Postman needed.
+
+> All endpoints are fully documented with request bodies, query params, and live response examples.
+
+---
 
 ## 🗂 Project Structure
 
