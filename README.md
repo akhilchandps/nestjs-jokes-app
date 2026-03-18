@@ -3,6 +3,17 @@
 A REST API for submitting, retrieving, updating, and deleting jokes — built with **NestJS**, **TypeORM**, and **PostgreSQL**.
 
 ---
+## ✨ Features
+ 
+- Submit a new joke
+- Retrieve jokes by email
+- Retrieve a random joke
+- Update a joke
+- Delete a joke
+- Input validation (using `class-validator`)
+- Proper error handling (`NotFoundException` for missing jokes)
+
+  ---
 
 ## 📦 Tech Stack
 
